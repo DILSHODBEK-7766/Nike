@@ -22,6 +22,11 @@
         place-items: center; 
     }
 
+    #sideBarBtn {
+        -webkit-tap-highlight-color: transparent;
+        outline: none;
+    }
+
     .navbar__content-logo-icon i{
         display: block !important;
         grid-area: 1/1;

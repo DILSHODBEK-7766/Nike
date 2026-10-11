@@ -138,7 +138,24 @@ let startX = 0;
 let endX = 0;
 
 document.addEventListener("touchstart", (e) => {
-    
+    startX = e.touches[0].clientX;
+});
+
+document.addEventListener("touchend", (e) => {
+    endX = e.changedTouches[0].clientX;
+
+
+    if (endX - startX > 50 && startX < 40 && !sideBarMenu.classList.contains(active)) {
+        sideBarBtn.classList.add("active");
+
+        sideBarMenu.classList.add("active");
+    }
+
+    if (startX - endX > 50 && sideBarMenu.classList.contains("active")) {
+        sideBarBtn.classList.remove("active");
+
+        sideBarMenu.classList.remove("active");
+    }
 });
 
 // NATIVE SWIPE BILAN OCHILISH VA YOPILISH!!!
