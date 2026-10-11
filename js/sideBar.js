@@ -145,7 +145,7 @@ document.addEventListener("touchend", (e) => {
     endX = e.changedTouches[0].clientX;
 
 
-    if (endX - startX > 50 && startX < 40 && !sideBarMenu.classList.contains(active)) {
+    if (endX - startX > 50 && startX < 150 && !sideBarMenu.classList.contains("active")) {
         sideBarBtn.classList.add("active");
 
         sideBarMenu.classList.add("active");
