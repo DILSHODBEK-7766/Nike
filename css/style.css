@@ -10,6 +10,7 @@
     text-decoration: none;
     /* LINK YOKI TUGMA BOSILGANDA ORQASIDAGI SHAFFOF RAANGNI YO'Q QILADI */
     -webkit-tap-highlight-color: transparent;
+    outline: none;
 }
 
 .container {
