@@ -1,0 +1,309 @@
+@import url(./font.css);
+@import url(./media.css);
+
+* {
+    font-family: 'roboto';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header{
+    position: sticky; /* Scroll uchun */
+    top: 0;
+    z-index: 999;
+}
+
+/* =============================== */
+/* HEADER STARTING!!!              */
+/* =============================== */
+.navbar {
+    background: #322E41;
+    transition: background 0.4s ease, box-shadow 0.4s ease;
+    backdrop-filter: blur(2px);
+}
+
+/* STYLE FOR stickyBar!!! */
+
+#stickyBar.scrolled{
+    background: #3c3750;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, .5);
+}
+
+/* STYLE FOR stickyBar!!! */
+/* ===================================== */
+
+.navbar__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar__content-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar__content-logo-icon i {
+    display: none;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar__content-logo img {
+    cursor: pointer;
+    padding: 20px 0;
+}
+
+.navbar__content-block {
+    display: flex;
+}
+
+.navbar__content-block-list a {
+    display: inline-block;
+    background: transparent;
+    color: white;
+    padding: 30px 15px;
+    text-align: center;
+    transition: all .3s linear;
+}
+
+.navbar__content-block li a:hover {
+    color: #D47300;
+    background: #FFFFFF;
+}
+
+/* HEADER ENDING!!! */
+/* =============================== */
+
+
+/* =============================== */
+/* MAIN STARTING!!!                */
+/* =============================== */
+
+/* HERO STYLES!!! */
+.nike {
+    background-image: url(../img/nike__bg.svg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.nike__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.nike__content h1 {
+    color: #FFFFFF;
+    font-size: 50px;
+    border-radius: 10px;
+    transition: all .2s linear;
+}
+
+.nike__content p a {
+    background: transparent;
+    color: #FFFFFF;
+    padding: 4px 8px;
+    transition: all .2s linear;
+    cursor: pointer;
+}
+
+.nike__content p a:hover {
+    background: white;
+    color: #e07e06;
+    border-radius: 4px;
+}
+
+.nike__content p span {
+    font-weight: 700;
+}
+
+/* HERO STYLES END!!! */
+/* ======================== */
+
+
+/* SHOES SECTION!!! */
+.shoes {
+    background: #EBEBEB;
+}
+
+.shoes__parent {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 40px 0;
+}
+
+/* Chap tomondagi katta blok (Review) */
+.shoes__parent-review {
+    background: #FFFFFF;
+    padding: 20px;
+    width: 550px;
+    border-radius: 6px;
+}
+
+.shoes__parent-img-box {
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+.shoes__parent-img-box img,
+.shoes__sneaker-img-box img {
+    transition: all .3s linear;
+}
+
+.shoes__parent-review:hover .shoes__parent-img-box img,
+.shoes__sneaker:hover .shoes__sneaker-img-box img {
+    transform: scale(1.1); /* 1.08 m'eyorida kattalashtiradi */
+}
+
+.shoes__parent-review h1 {
+    font-size: 25px;
+    margin: 10px 0;
+    transition: all .2s linear;
+}
+
+.shoes__parent-review p {
+    opacity: .4;
+    transition: all .2s linear;
+}
+
+/* O'ng tomondagi kichik bloklar (Child) */
+.shoes__parent-child {
+    display: flex;
+    gap: 20px;
+}
+
+.shoes__parent-child-block{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.shoes__sneaker {
+    background: white;
+    padding: 20px; 
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* SHOES SECTION END!!! */
+/* ============================== */
+
+
+/* =========================== */
+/* FOOTER STARTING!!!          */
+/* =========================== */
+
+.footer {
+    background: #322E41;
+    padding: 30px 0;
+}
+
+.footer__parent {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer__parent-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Input, Textarea va Button!!! */
+.footer__parent-form input,
+.footer__parent-form textarea,
+.footer__parent-form button {
+    width: 350px;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    outline: none;
+    font-size: 18px;
+    transition: all .2s linear;
+}
+
+/* Input va Textarea ichki bo'shliqlari */
+.footer__parent-form input,
+.footer__parent-form textarea {
+    padding: 8px 12px;
+    background-color: #FFFFFF;
+}
+
+/* Placeholder rangini chiroyli qilish */
+.footer__parent-form input::placeholder,
+.footer__parent-form textarea::placeholder {
+    color: #878484;
+}
+
+/* FOCUS holati: Foydalanuvchi yozish uchun bosganda!!! */
+.footer__parent-form input:focus,
+.footer__parent-form textarea:focus {
+    border: 2px solid #D47300;
+}
+
+/* Balandliklarni to'g'irlash */
+.footer__parent-form textarea {
+    resize: none; /* avtomatik razmerlashni olib tashlash!!! */
+}
+
+/* Tugmani qalinroq va bosishga qulay qilish */
+.footer__parent-form button {
+    padding: 8px 0; /* Balandligi avtomatik inputlarga moslashadi */
+    background: #544294;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* Tugma ustiga borganda */
+.footer__parent-form button:hover {
+    background: #43337a; /* Faqat qora soya emas, foni ham ozgina to'qroq bo'lishi dizaynni boyitadi */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* ================================= */
+
+/* Ro'yxat qismi (Links) */
+.footer__parent-list {
+    display: flex;
+    gap: 30px;
+}
+
+.footer__parent-list ul li a {
+    display: inline-block;
+    padding: 7px;
+    margin: 3px 0;
+    text-align: start;
+    width: 120px;
+    border-radius: 6px;
+    background: transparent;
+    color: #FFFFFF;
+    font-size: 18px;
+    transition: all .2s linear;
+}
+
+.footer__parent-list ul li a:hover {
+    color: #D47300;
+}
