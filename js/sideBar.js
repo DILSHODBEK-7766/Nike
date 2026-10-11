@@ -93,12 +93,16 @@ const sideBarBtn = document.getElementById("sideBarBtn");
 
 const sideBarMenu = document.getElementById("sideBarMenu");
 
+const sideBarOverlay = document.getElementById("sideBarOverlay");
+
 // BTN BOSILGANDA OCHILIB YOPILISH(opacity)!!!
 
 sideBarBtn.addEventListener("click", () =>{
     sideBarMenu.classList.toggle("active");
 
     sideBarBtn.classList.toggle("active");
+
+    sideBarOverlay.classList.toggle("active");
 })
 
 // BTN BOSILGANDA OCHILIB YOPILISH(opacity)!!!
@@ -111,6 +115,8 @@ document.addEventListener("click", (e) => {
         sideBarBtn.classList.remove("active");
 
         sideBarMenu.classList.remove("active");
+
+        sideBarOverlay.classList.remove("active");
     }
 });
 // WINDOWSNING OCHIQ QISMIGA BOSGANDA YOPILISH!!!
@@ -124,6 +130,9 @@ document.addEventListener("keydown", (e) => {
         sideBarBtn.classList.remove("active");
 
         sideBarMenu.classList.remove("active");
+
+        sideBarOverlay.classList.remove("active");
+
     }
 });
 
@@ -149,17 +158,29 @@ document.addEventListener("touchend", (e) => {
         sideBarBtn.classList.add("active");
 
         sideBarMenu.classList.add("active");
+
+        sideBarOverlay.classList.add("active");
     }
 
     if (startX - endX > 50 && sideBarMenu.classList.contains("active")) {
         sideBarBtn.classList.remove("active");
 
         sideBarMenu.classList.remove("active");
+
+        sideBarOverlay.classList.remove("active");
     }
 });
 
 // NATIVE SWIPE BILAN OCHILISH VA YOPILISH!!!
 // ================================================
+
+
+// OVERLAY HOLATI BILAN!!!
+
+
+
+// OVERLAY HOLATI BILAN!!!
+// ========================================
 
 // 4-USLUB PRO USLUB SWIPE BILAN!!!
 // ============================================
