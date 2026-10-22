@@ -21,7 +21,6 @@
 header{
     position: sticky; /* Scroll uchun */
     top: 0;
-    z-index: 999;
 }
 
 /* =============================== */
@@ -35,7 +34,7 @@ header{
 
 /* STYLE FOR stickyBar!!! */
 
-#stickyBar.scrolled{
+.navbar.scrolled{
     background: #3c3750;
     box-shadow: 0 4px 20px rgba(0, 0, 0, .5);
 }
@@ -55,7 +54,7 @@ header{
     gap: 10px;
 }
 
-#sideBarBtn{
+.navbar__content-logo-icon{
     outline: none;
 }
 
@@ -64,7 +63,6 @@ header{
     color: white;
     font-size: 25px;
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
 }
 
 .navbar__content-logo img {
@@ -77,11 +75,9 @@ header{
 }
 
 .navbar__content-block-list a {
-    display: inline-block;
     background: transparent;
     color: white;
     padding: 30px 15px;
-    text-align: center;
     transition: all .3s linear;
 }
 

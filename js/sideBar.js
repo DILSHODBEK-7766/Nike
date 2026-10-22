@@ -89,11 +89,12 @@
 
 // 4-USLUB PRO USLUB SWIPE BILAN!!!
 
+const sideBarOverlay = document.getElementById("sideBarOverlay");
+
 const sideBarBtn = document.getElementById("sideBarBtn");
 
 const sideBarMenu = document.getElementById("sideBarMenu");
 
-const sideBarOverlay = document.getElementById("sideBarOverlay");
 
 // BTN BOSILGANDA OCHILIB YOPILISH(opacity)!!!
 
