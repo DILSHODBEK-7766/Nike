@@ -1,4 +1,4 @@
-// BIRINCHI MEDIASIZ SODDA USLUB:
+// 1111) MEDIASIZ USLUB:
 
 // const stickyBar = getElementById("stickyBar");
 
@@ -15,7 +15,7 @@
 
 
 
-// IKKINCHI USLUB MEDIA BILAN BIRGALIKDA(DEFAULT HOLAT):
+// 2222) MEDIA BILAN BIRGALIKDA(DEFAULT):
 
 // const stickyBar = getElementById("stickyBar");
 
@@ -31,7 +31,7 @@
 
 
 
-// UCHINCHI USLUB MATCHMEDIA USLUBI:
+// 3333) MATCHMEDIA USLUBI:
 
 const stickyBar = document.getElementById("stickyBar");
 

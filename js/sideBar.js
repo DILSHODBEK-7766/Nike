@@ -12,9 +12,11 @@
 
 //     if (sideBarMenu.classList.contains("active")) {
 //         sideBarBtn.classList.remove("fa-bars");
+
 //         sideBarBtn.classList.add("fa-xmark");
 //     }else{
 //         sideBarBtn.classList.remove("fa-xmark");
+
 //         sideBarBtn.classList.add("fa-bars");
 //     }
 // })
