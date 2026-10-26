@@ -96,40 +96,45 @@ header{
 
 /* HERO STYLES!!! */
 .nike {
-    background-image: url(../img/nike__bg.svg);
+    background-image: url(../img/hero_bg.svg);
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.nike__img{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    z-index: 1;
+}
+
+.nike__img img{
+    width: 100%;
 }
 
 .nike__content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    height: 100vh;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 2;
 }
 
 .nike__content h1 {
-    color: #FFFFFF;
+    color: white;
     font-size: 50px;
     border-radius: 10px;
     transition: all .2s linear;
 }
 
-.nike__content p a {
-    background: transparent;
-    color: #FFFFFF;
-    padding: 4px 8px;
-    transition: all .2s linear;
-    cursor: pointer;
-}
-
-.nike__content p a:hover {
-    background: white;
-    color: #e07e06;
-    border-radius: 4px;
+.nike__content p{
+    color: white;
 }
 
 .nike__content p span {
