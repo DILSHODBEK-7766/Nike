@@ -53,17 +53,17 @@
     }
 
     /* STYLE FOR active and passive Btns!!! */
-    #activeIcon{
+    .fa-xmark{
         opacity: 0;
         transform: rotate(-45deg) scale(1);
     }
 
-    .navbar__content-logo-icon.active #passiveIcon{
+    .navbar__content-logo-icon.active .fa-bars{
         opacity: 0;
         transform: rotate(45deg) scale(0);
     }
 
-    .navbar__content-logo-icon.active #activeIcon{
+    .navbar__content-logo-icon.active .fa-xmark{
         opacity: 1;
         transform: rotate(0deg) scale(1);
     }

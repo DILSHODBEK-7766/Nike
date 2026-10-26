@@ -1,11 +1,9 @@
-// BIRINCHI DEFAULT USLUB SIDEBAR UCHUN!!!
+// 1111) BTN BOSILGANDA OCHILIB YOPILISH(opacity yo'q)!!!
 
 // const sideBarBtn = document.getElementById("sideBarBtn");
 
 // const sideBarMenu = document.getElementById("sideBarMenu");
 
-
-// BTN BOSILGANDA OCHILIB YOPILISH(opacity yo'q)!!!
 
 // sideBarBtn.addEventListener("click", () => {
 //     sideBarMenu.classList.toggle("active");
@@ -19,77 +17,11 @@
 
 //         sideBarBtn.classList.add("fa-bars");
 //     }
-// })
-
-
-
-// 2-USLUB OPACITY BUTTON USLUBI!!!
-
-// BTN BOSILGANDA OCHILIB YOPILISH(opacity)!!!
-
-// const sideBarBtn = document.getElementById("sideBarBtn");
-
-// const sideBarMenu = document.getElementById("sideBarMenu");
-
-// sideBarBtn.addEventListener("click", ()=> {
-//     sideBarBtn.classList.toggle("active");
-
-//     sideBarMenu.classList.toggle("active");
 // });
 
-// BTN BOSILGANDA OCHILIB YOPILISH!!!
-// =========================================
 
 
-// 3-USLUB PRO USLUB!!!
-
-// const sideBarBtn = document.getElementById("sideBarBtn");
-
-// const sideBarMenu = document.getElementById("sideBarMenu");
-
-
-// // BTN BOSILGANDA OCHILIB YOPILISH(opacity)!!!
-
-// sideBarBtn.addEventListener("click", () => {
-//     sideBarBtn.classList.toggle("active");
-
-//     sideBarMenu.classList.toggle("active");
-// });
-
-// BTN BOSILGANDA OCHILIB YOPILISH!!!
-// ==========================================
-
-// WINDOWSNING OCHIQ QISMIGA BOSGANDA YOPILISH!!!
-
-// document.addEventListener("click", (e) => {
-//     if (!sideBarBtn.contains(e.target) && !sideBarMenu.contains(e.target)) {
-//         sideBarBtn.classList.remove("active");
-
-//         sideBarMenu.classList.remove("active");
-//     }
-// });
-
-// WINDOWSNING OCHIQ QISMIGA BOSGANDA YOPILISH!!!
-// ==================================================
-
-// ESC YOKI IXTIYORIY BUTTON BOSILGANDA YOPILISH!!!
-
-// document.addEventListener("keydown", (e) => {
-//     if (e.key == "Escape" && sideBarMenu.classList.contains("active")) {
-//         sideBarBtn.classList.remove("active");
-
-//         sideBarMenu.classList.remove("active"); 
-//     }
-// });
-
-// ESC YOKI IXTIYORIY BUTTON BOSILGANDA YOPILISH!!!
-// =======================================================
-
-// 3-USLUB PRO USLUB!!!
-// =======================================
-
-
-// 4-USLUB PRO USLUB SWIPE BILAN!!!
+// FULL SIDEBAR STYLE!!!
 
 const sideBarOverlay = document.getElementById("sideBarOverlay");
 
@@ -98,7 +30,7 @@ const sideBarBtn = document.getElementById("sideBarBtn");
 const sideBarMenu = document.getElementById("sideBarMenu");
 
 
-// BTN BOSILGANDA OCHILIB YOPILISH(opacity)!!!
+// 1111) BTN BOSILGANDA OCHILIB YOPILISH(opacity)!!!
 
 sideBarBtn.addEventListener("click", () =>{
     sideBarMenu.classList.toggle("active");
@@ -112,7 +44,8 @@ sideBarBtn.addEventListener("click", () =>{
 // =======================================================
 
 
-// WINDOWSNING OCHIQ QISMIGA BOSGANDA YOPILISH!!!
+// 2222) WINDOWSNING OCHIQ QISMIGA BOSGANDA YOPILISH!!!
+
 document.addEventListener("click", (e) => {
     if (!sideBarBtn.contains(e.target) && !sideBarMenu.contains(e.target)) {
         sideBarBtn.classList.remove("active");
@@ -122,11 +55,12 @@ document.addEventListener("click", (e) => {
         sideBarOverlay.classList.remove("active");
     }
 });
+
 // WINDOWSNING OCHIQ QISMIGA BOSGANDA YOPILISH!!!
 // =======================================================
 
 
-// ESC YOKI IXTIYORIY BUTTON BOSILGANDA YOPILISH!!!
+// 3333) ESC YOKI IXTIYORIY BUTTON BOSILGANDA YOPILISH!!!
 
 document.addEventListener("keydown", (e) => {
     if (e.key == "Escape" && sideBarMenu.classList.contains("active")) {
@@ -143,7 +77,7 @@ document.addEventListener("keydown", (e) => {
 // ============================================
 
 
-// NATIVE SWIPE BILAN OCHILISH VA YOPILISH!!!
+// 4444) NATIVE SWIPE!!!
 
 let startX = 0;
 
@@ -174,16 +108,8 @@ document.addEventListener("touchend", (e) => {
     }
 });
 
-// NATIVE SWIPE BILAN OCHILISH VA YOPILISH!!!
-// ================================================
+// 4) NATIVE SWIPE!!!
+// ====================================
 
-
-// OVERLAY HOLATI BILAN!!!
-
-
-
-// OVERLAY HOLATI BILAN!!!
-// ========================================
-
-// 4-USLUB PRO USLUB SWIPE BILAN!!!
-// ============================================
+// FULL SIDEBAR STYLE!!!
+// =======================================

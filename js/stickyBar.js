@@ -31,7 +31,7 @@
 
 
 
-// 3333) MATCHMEDIA USLUBI:
+// 3333) MATCHMEDIA USLUBI(PRO):
 
 const stickyBar = document.getElementById("stickyBar");
 
