@@ -40,14 +40,14 @@
         position: relative;
         width: 45px;
         height: 45px;
-        z-index: 1001;
+        /* z-index: 1001; yozib qo'ysa ham zarari yo'q, lekin majburiy emas sababi iconlarni va logolarni o'rab turgan otasiga biz allaqachon zet qatlamni berib bo'lganmiz!!! */ 
         cursor: pointer;
         display: grid;
         place-items: center;
     }
 
     .navbar__content-logo-icon i{
-        display: block !important;
+        display: block;
         grid-area: 1/1;
         transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
     }
@@ -88,14 +88,14 @@
     .navbar__content-block-list a{
         display: block;
         font-size: 17px;
-        padding: 20px 30px !important;
-        background: transparent !important;
+        padding: 20px 30px;
+        background: transparent;
         border-left: 3px solid transparent;
         border-bottom: 1px solid rgb(111, 110, 110);
     }
 
     .navbar__content-block-list a:hover{
-        background: #4D485F !important;
+        background: #4D485F;
         cursor: pointer;
         border-left: 3px solid white;
     }
@@ -114,11 +114,40 @@
 
 }
 
+@media (max-width: 550px) {
+    .nike__content h1 {
+        font-size: 40px;
+    }
+
+    .nike__content p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 430px) {
+    .nike__img {
+        top: 55%;
+    }
+
+    .nike__content {
+        top: 55%;
+    }
+
+    .nike__content h1 {
+        font-size: 35px;
+    }
+
+    .nike__content p {
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+}
+
 @media (max-width: 425px) {
     
     .navbar__content-block-list a{
         font-size: 16px;
-        padding: 16px 30px !important;
+        padding: 16px 30px;
     }
 
 }
