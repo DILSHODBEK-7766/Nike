@@ -53,11 +53,8 @@ function handleScroll() {
 
 window.addEventListener("scroll", handleScroll);
 
-desktopMedia.addEventListener("change", (e) => {
-    if (!(e).matches) {
-        stickyBar.classList.remove("scrolled");
-    }
 
+desktopMedia.addEventListener("change", () => {
     handleScroll();
 });
 
