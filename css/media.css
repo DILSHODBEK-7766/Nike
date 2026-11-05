@@ -1,9 +1,13 @@
 
+/* CONTAINER PADDING!!! */
 @media (max-width: 1320px) {
     .container {
         padding: 0 20px;
     }
 }
+/* CONTAINER PADDING!!! */
+/* ================================ */
+
 
 @media (max-width: 1200px) {
     .shoes__parent{

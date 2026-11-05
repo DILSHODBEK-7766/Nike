@@ -106,7 +106,6 @@ header{
 /* MAIN STARTING!!!                */
 /* =============================== */
 
-
 /* HERO STYLES!!! */
 
 .nike {
@@ -123,14 +122,14 @@ header{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 90%; 
-    max-width: 900px;
+    width: 95%; 
+    max-width: 850px;
     z-index: 1;
 
-    /* NIKE ANIMATION!!! */
-    animation: nikeFloat 3s ease-in-out infinite;
-    /* NIKE ANIMATION!!! */
-    /* ======================== */
+    /* NIKE SNEAKERS ANIMATION!!! */
+    animation: nikeSneakersFloat 3s ease-in-out infinite;
+    /* NIKE SNEAKERS ANIMATION!!! */
+    /* ==================================== */
 }
 
 .nike__img img{
@@ -159,15 +158,15 @@ header{
     font-weight: 700;
 }
 
-/* HERO NIKE 3D ANIMATION!!!  */
+/* NIKE SNEAKERS 3D ANIMATION!!!  */
 
-@keyframes nikeFloat {
+@keyframes nikeSneakersFloat { 
     0% {
         transform: translate(-50%, -50%) translateY(0px);
     }
     
     50% {
-        transform: translate(-50%, -50%) translateY(-20px);
+        transform: translate(-50%, -50%) translateY(-15px);
     }
 
     100% {
@@ -175,7 +174,7 @@ header{
     }
 }
 
-/* HERO NIKE 3D ANIMATION!!!  */
+/* NIKE SNEAKERS 3D ANIMATION!!!  */
 /* ================================= */
 
 
@@ -194,7 +193,7 @@ header{
     gap: 20px;
     padding: 40px 0;
     position: relative;
-    /* z-index: 10; */
+    z-index: 10;
     margin-top: -80px;
 }
 
