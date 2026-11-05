@@ -90,8 +90,9 @@ document.addEventListener("touchstart", (e) => {
 document.addEventListener("touchend", (e) => {
     endX = e.changedTouches[0].clientX;
 
+    // SHARTLAR TOUCHENDNING ichida chunki faqat barmoq ko'tarilgach qayerga surilganini hisoblay olamiz!!!
 
-    if (endX - startX > 50 && startX < 150 && !sideBarMenu.classList.contains("active")) {
+    if (endX - startX > 30 && startX < 200 && !sideBarMenu.classList.contains("active")) {
         sideBarBtn.classList.add("active");
 
         sideBarMenu.classList.add("active");
@@ -99,7 +100,7 @@ document.addEventListener("touchend", (e) => {
         sideBarOverlay.classList.add("active");
     }
 
-    if (startX - endX > 50 && sideBarMenu.classList.contains("active")) {
+    if (startX - endX > 30 && sideBarMenu.classList.contains("active")) {
         sideBarBtn.classList.remove("active");
 
         sideBarMenu.classList.remove("active");
