@@ -37,12 +37,10 @@ header{
 
 
 /* STYLE FOR stickyBar!!! */
-
 .navbar.scrolled{
     background: #3c3750;
     box-shadow: 0 4px 20px rgba(0, 0, 0, .5);
 }
-
 /* STYLE FOR stickyBar!!! */
 /* ===================================== */
 
@@ -191,10 +189,10 @@ header{
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    padding: 40px 0;
+    padding: 20px 0;
     position: relative;
     z-index: 10;
-    margin-top: -80px;
+    margin-top: -60px;
 }
 
 /* Chap tomondagi katta blok (Review) */
@@ -204,9 +202,13 @@ header{
     border-radius: 6px;
 }
 
+.shoes__parent-review, .shoes__parent-child{
+    flex: 1;
+}
+
 .shoes__parent-review:hover .shoes__parent-img img,
 .shoes__sneaker:hover .shoes__sneaker-img img {
-    transform: scale(1.05); /* 1.05 me'yorida kattalashtiradi !!! */
+    transform: scale(1.1); /* 1.1 me'yorida kattalashtiradi !!! */
 }
 
 .shoes__parent-img {
@@ -223,6 +225,11 @@ header{
     border-radius: 6px;
 }
 
+.shoes__parent-img img,
+.shoes__sneaker-img img {
+    transition: transform .3s ease-in-out;
+}
+
 .shoes__parent-review-text h1 {
     font-size: 22px;
     margin: 10px 0;
@@ -232,14 +239,6 @@ header{
     opacity: .4;
 }
 
-.shoes__parent-review, .shoes__parent-child{
-    flex: 1;
-}
-
-.shoes__parent-img img,
-.shoes__sneaker-img img {
-    transition: all .3s linear;
-}
 
 /* O'ng tomondagi kichik bloklar (Child) */
 .shoes__parent-child {
@@ -256,26 +255,28 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
     gap: 10px;
     transition: transform .3s ease-in-out;
+}
+
+.shoes__sneaker:hover {
+    cursor: pointer;
+    transform: translateY(-7px);
 }
 
 .shoes__sneaker-img {
     width: 100px;
     height: 100px;
+    border: 3px solid #B8B8B8;
+    overflow: hidden;
     border-radius: 50%;
 }
 
 .shoes__sneaker-img img {
     width: 100%;
     height: 100%;
-    border-radius: 50%;
-    border: 3px solid #B8B8B8;
-}
-
-.shoes__sneaker:hover {
-    cursor: pointer;
-    transform: translateY(-7px);
+    object-fit: contain;
 }
 
 .shoes__sneaker h2{

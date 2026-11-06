@@ -12,13 +12,11 @@
 @media (max-width: 1200px) {
     .shoes__parent{
         flex-direction: column;
-        justify-content: center;
     }
 
     .shoes__parent-review{
         display: flex;
         align-items: center;
-        justify-content: space-between;
         gap: 20px;
     }
 
