@@ -212,9 +212,10 @@ header{
 }
 
 .shoes__parent-img {
+    width: 100%;
+    aspect-ratio: 2/1;
     overflow: hidden;
     border-radius: 6px;
-    height: 350px;
     cursor: pointer;
 }
 
@@ -279,11 +280,11 @@ header{
     object-fit: contain;
 }
 
-.shoes__sneaker h2{
+.shoes__sneaker-text h2{
     font-size: 22px;
 }
 
-.shoes__sneaker p{
+.shoes__sneaker-text p{
     opacity: .4;
 }
 

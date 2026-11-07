@@ -17,26 +17,32 @@
     .shoes__parent-review{
         display: flex;
         align-items: center;
-        gap: 20px;
+        gap: 10px;
     }
 
     .shoes__parent-img {
-        height: 250px;
-        width: 500px;
+        width: 700px;
     }
 
     .shoes__parent-review-text{
-        width: 650px;
+        width: 600px;
         text-align: center;
     }
 
-    .shoes__sneaker {
-        text-align: center;
+    .shoes__sneaker{
+        flex-direction: row;
     }
 
     .shoes__sneaker-img {
-        width: 130px;
-        height: 130px;
+        flex-shrink: 0;
+    }
+
+    .shoes__sneaker-text {
+        width: 100%;
+    }
+
+    .shoes__sneaker-text h2{
+        margin: 5px 0;
     }
 
 }
@@ -148,9 +154,6 @@
     /*  FULL NAVBAR MEDIA!!! */
     /* ============================== */
 
-}
-
-@media (max-width: 900px) {
     .shoes__parent-review{
         flex-direction: column;
         padding: 10px;
@@ -158,11 +161,27 @@
 
     .shoes__parent-img {
         width: 100%;
-        height: 300px;
     }
 
     .shoes__parent-review-text {
         width: 100%;
+    }
+
+}
+
+@media (max-width: 900px) {
+
+    .shoes__sneaker {
+        padding: 10px;
+        gap: 5px;
+    }
+
+    .shoes__sneaker-text h2 {
+        font-size: 20px;
+    }
+
+    .shoes__sneaker-text p {
+        font-size: 14px;
     }
 }
 
@@ -184,21 +203,22 @@
     }
 
     .shoes__sneaker{
-        padding: 10px;
-        gap: 5px;
+        flex-direction: column;
     }
 
-    .shoes__sneaker-img {
-        width: 100px;
-        height: 100px;
+    .shoes__sneaker-img{
+        width: 90px;
+        height: 90px;
     }
 
-    .shoes__sneaker h2 {
-        font-size: 20px;
+    .shoes__sneaker-text h2 {
+        font-size: 18px;
+        margin: 2px 0;
     }
 
-    .shoes__sneaker p {
-        font-size: 13px;
+    .shoes__sneaker-text p {
+        font-size: 12px;
+        letter-spacing: 1px;
     }
 }
 
@@ -220,10 +240,6 @@
         margin-top: -70px;
     }
 
-    .shoes__parent-img {
-        height: 200px;
-    }
-
     .shoes__parent-review-text h1 {
         font-size: 20px;
         margin-top: -5px;
@@ -238,22 +254,18 @@
         gap: 10px;
     }
 
-    .shoes__sneaker-img{
-        width: 80px;
-        height: 80px;
-    }
-
-    .shoes__sneaker h2 {
-        font-size: 18px;
-    }
-
-    .shoes__sneaker p {
-        font-size: 12px;
-        letter-spacing: 1px;
+    .shoes__sneaker{
+        padding: 5px;
     }
 }
 
 @media (max-width: 430px) {
+
+    .navbar__content-block-list a{
+        font-size: 16px;
+        padding: 16px 15px;
+    }
+
     /* HERO STYLES!!! */
     .nike__img {
         top: 55%;
@@ -271,23 +283,9 @@
         font-size: 12px;
         letter-spacing: 1px;
     }
-    /* HERO STYLES!!! */
-    /* =========================== */
-}
-
-@media (max-width: 425px) {
-
-    .navbar__content-block-list a{
-        font-size: 16px;
-        padding: 16px 15px;
-    }
-
-    .shoes__parent-img {
-        height: 160px;
-    }
 
     .shoes__parent-review-text h1 {
-        margin-top: -20px;
+        margin-top: -15px;
         font-size: 16px;
         letter-spacing: 1px;
     }
@@ -297,21 +295,18 @@
         font-size: 11px;
     }
 
-    .shoes__sneaker{
-        padding: 5px;
-    }
-
     .shoes__sneaker-img{
-        width: 65px;
-        height: 65px;
+        width: 70px;
+        height: 70px;
     }
 
-    .shoes__sneaker h2 {
-        font-size: 14px;
+    .shoes__sneaker-text h2 {
+        font-size: 15px;
     }
 
-    .shoes__sneaker p {
+    .shoes__sneaker-text p {
         font-size: 10px;
     }
-
+    /* HERO STYLES!!! */
+    /* =========================== */
 }
