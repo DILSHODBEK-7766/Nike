@@ -200,6 +200,7 @@ header{
     background: #FFFFFF;
     padding: 15px;
     border-radius: 6px;
+    transition: opacity 0.3s ease-in-out;
 }
 
 .shoes__parent-review, .shoes__parent-child{
@@ -213,7 +214,7 @@ header{
 
 .shoes__parent-img {
     width: 100%;
-    aspect-ratio: 2/1;
+    height: 300px;
     overflow: hidden;
     border-radius: 6px;
     cursor: pointer;
@@ -250,7 +251,7 @@ header{
 
 .shoes__sneaker {
     background: white;
-    padding: 20px; 
+    padding: 15px; 
     border-radius: 6px;
     display: flex;
     flex-direction: column;
@@ -260,6 +261,17 @@ header{
     gap: 10px;
     transition: transform .3s ease-in-out;
 }
+
+/* SHOES SWIPE FOR JS!!! */
+
+.shoes__sneaker.active {
+    border: 2px solid #D47300;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transform: translateY(-7px);
+}
+
+/* SHOES SWIPE FOR JS!!! */
+/* ======================================== */
 
 .shoes__sneaker:hover {
     cursor: pointer;

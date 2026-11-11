@@ -1,4 +1,3 @@
-
 /* CONTAINER PADDING!!! */
 @media (max-width: 1320px) {
     .container {
@@ -21,11 +20,12 @@
     }
 
     .shoes__parent-img {
-        width: 700px;
+        width: 50%;
+        height: 250px;
     }
 
     .shoes__parent-review-text{
-        width: 600px;
+        width: 50%;
         text-align: center;
     }
 
@@ -161,6 +161,7 @@
 
     .shoes__parent-img {
         width: 100%;
+        height: 350px;
     }
 
     .shoes__parent-review-text {
@@ -191,6 +192,7 @@
     }
 
     .shoes__parent-img {
+        height: 300px;
         border-radius: 6px 6px 0 0;
     }
 
@@ -240,6 +242,10 @@
         margin-top: -70px;
     }
 
+    .shoes__parent-img {
+        height: 250px;
+    }
+
     .shoes__parent-review-text h1 {
         font-size: 20px;
         margin-top: -5px;
@@ -282,6 +288,10 @@
     .nike__content p {
         font-size: 12px;
         letter-spacing: 1px;
+    }
+
+    .shoes__parent-img {
+        height: 160px;
     }
 
     .shoes__parent-review-text h1 {
