@@ -44,22 +44,28 @@ const mainReviewTitle = document.getElementById("mainReviewTitle");
 const mainReviewDesc = document.getElementById("mainReviewDesc");
 
 
-shoesSneaker.forEach(shoes => {
-    shoes.addEventListener("click", ()=> {
-        
-        shoesSneaker.forEach(removeShoes => {
-            removeShoes.classList.remove("active");
-        })
+shoesSneaker.forEach((shoes) => {
+    shoes.addEventListener("click", () => {
 
+        // barcha shoeslardan active klasini olib tashladik!!!.
+        shoesSneaker.forEach((removeShoes) => {
+            removeShoes.classList.remove("active"); 
+        });
+
+        // aynan click bo'lgan shoesga activeni qo'shib qo'ydik!!!.
         shoes.classList.add("active");
 
-
-        const clickedId = shoes.getAttribute("data-id");
-
-        const selectedShoe = shoesData.find(item => item.id == clickedId);
-
+        // katta shoesni vaqtincha 0 qilib qo'ydik!!!.
         mainShoesInfo.style.opacity = "0";
 
+        // clickedShoe nomi ostida bosilgan shoesning data id sini chaqirib oldik!!!. 
+        const clickedShoe = shoes.getAttribute("data-id");
+
+        // selectedShoe nomi bilan shart berdik, shoesDataning ichidan tanlangan shoesning id si clickedShoe ga teng bo'lganini!!!.
+        const selectedShoe = shoesData.find((selected) => selected.id == clickedShoe);
+
+
+        // ma'lumotlarning almashish vaqtini 0.2 soniya qilib belgilab qo'ydik!!!.
         setTimeout(() => {
 
             mainReviewImg.src = selectedShoe.image;
@@ -68,8 +74,10 @@ shoesSneaker.forEach(shoes => {
 
             mainReviewDesc.textContent = selectedShoe.desc;
 
+            // ma'lumotlar almashib yana ko'rinadigan qilib qo'ydik!!!.
             mainShoesInfo.style.opacity = "1";
 
         }, 200);
     });
+
 });
