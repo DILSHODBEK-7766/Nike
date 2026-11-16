@@ -1,0 +1,58 @@
+/* MY COMPONENTS STARTING!!! */
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-between{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+/* MY COMPONENTS ENDING!!! */
+/* =================================== */
+
+
+/* MY ROOTS STARTING!!! */
+
+:root{
+    /* COLORS!!!! */
+    --color-bg: #322E41; 
+
+    --color-primary: #FFFFFF;
+    
+    --color-hover: #D47300;
+
+    --color-muted: #9B9B9B;
+    /* COLORS!!!! */
+    /* ======================== */
+
+    /* RADIUS!!! */
+    --radius-md: 6px;
+    /* RADIUS!!! */
+    /* ============================== */
+
+    /* TRANSITIONS!!! */
+    --linear-fast: .2s linear;
+     
+    --linear-normal: .3s linear;
+
+    --linear-slow: .4s linear;
+
+    --ease-fast: .2s ease-in-out;
+    
+    --ease-normal: .3s ease-in-out;
+
+    --ease-slow: .4s ease-in-out;
+    /* TRANSITIONS!!! */
+    /* ======================== */
+}
+
+/* MY ROOTS ENDING!!! */
+/* ================================ */

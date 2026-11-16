@@ -29,7 +29,7 @@
                 <!-- NAVBAR CONTENT!!! -->
                 <div class="navbar__content">
 
-                    <div class="navbar__content-logo">
+                    <div class="navbar__content-logo flex-between">
 
                         <!-- SIDEBAR BTN!!! -->
                         <div id="sideBarBtn" class="navbar__content-logo-icon">
@@ -45,13 +45,13 @@
 
                     <!-- SIDEBAR MENU!!! -->
                     <ul id="sideBarMenu" class="navbar__content-block">
-                        <li class="navbar__content-block-list"><a href="#">Кроссовки</a></li>
-                        <li class="navbar__content-block-list"><a href="#">Кеды</a></li>
-                        <li class="navbar__content-block-list"><a href="#">Футболки</a></li>
-                        <li class="navbar__content-block-list"><a href="#">Шорты</a></li>
-                        <li class="navbar__content-block-list"><a href="#">Майки</a></li>
-                        <li class="navbar__content-block-list"><a href="#">Олимпийки</a></li>
-                        <li class="navbar__content-block-list"><a href="#">Толстовки</a></li>
+                        <li class="navbar__content-block-list"><a href="#" class="flex-center">Кроссовки</a></li>
+                        <li class="navbar__content-block-list"><a href="#" class="flex-center">Кеды</a></li>
+                        <li class="navbar__content-block-list"><a href="#" class="flex-center">Футболки</a></li>
+                        <li class="navbar__content-block-list"><a href="#" class="flex-center">Шорты</a></li>
+                        <li class="navbar__content-block-list"><a href="#" class="flex-center">Майки</a></li>
+                        <li class="navbar__content-block-list"><a href="#" class="flex-center">Олимпийки</a></li>
+                        <li class="navbar__content-block-list"><a href="#" class="flex-center">Толстовки</a></li>
                     </ul>
                     <!-- SIDEBAR MENU!!! -->
                     <!-- ============================ -->
@@ -93,7 +93,7 @@
         <!-- SHOES SECTION!!! -->
         <section class="shoes">
             <div class="container">
-                <div class="shoes__parent">
+                <div class="shoes__parent flex-between">
 
                     <div id="mainShoesInfo" class="shoes__parent-review">
                         <div class="shoes__parent-img">
@@ -115,7 +115,7 @@
 
                     <div class="shoes__parent-child">
 
-                        <div class="shoes__sneaker active" data-id="1" data-="">
+                        <div class="shoes__sneaker flex-col active" data-id="1" data-="">
                             <div class="shoes__sneaker-img">
                                 <img src="./img/hero_shoes-small.png" alt="nike-air-max">
                             </div>
@@ -130,7 +130,7 @@
                             </div>
                         </div>
 
-                        <div class="shoes__sneaker" data-id="2">
+                        <div class="shoes__sneaker flex-col" data-id="2">
                             <div class="shoes__sneaker-img">
                                 <img src="./img/nike_tanjun-small.png" alt="nike-tanjun">
                             </div>
@@ -145,7 +145,7 @@
                             </div>
                         </div>
 
-                        <div class="shoes__sneaker" data-id="3">
+                        <div class="shoes__sneaker flex-col" data-id="3">
                             <div class="shoes__sneaker-img">
                                 <img src="./img/nike_green-small.png" alt="nike-air-max">
                             </div>
@@ -160,7 +160,7 @@
                             </div>
                         </div>
 
-                        <div class="shoes__sneaker" data-id="4">
+                        <div class="shoes__sneaker flex-col" data-id="4">
                             <div class="shoes__sneaker-img">
                                 <img src="./img/nike_moon-small.png" alt="nike-tanjun">
                             </div>
@@ -189,35 +189,31 @@
     <!-- ================================ -->
 
     <!-- FOOTER STARTING!!! -->
-
-    <!-- 
+     
     <footer class="footer">
         <div class="container">
             <div class="footer__parent">
-
-                <form class="footer__parent-form">
+                <form class="footer__parent-form flex-col">
                     <input
                         type="text"  
                         name="fullName" 
                         id="fullName"
                         placeholder="Введите свое имя"
-                        aria-label="Введите свое имя" 
-                        autocomplete="name" 
-                        autocapitalize="words"   
-                        spellcheck="false"       
-                        minlength="2" 
+                        aria-label="Введите свое имя"
+                        autocomplete="name"
+                        autocapitalize="words"  
+                        spellcheck="false"
+                        minlength="2"
                         maxlength="50"
                     >
 
                     <textarea 
+                        placeholder="Сообщение"
                         name="userMessage" 
                         id="userMessage"
-                        placeholder="Сообщение"
                         aria-label="Сообщение"
                         spellcheck="true"
-                        rows="4"
-                    >
-                    </textarea>
+                        rows="4"></textarea>
 
                     <button
                         type="submit">
@@ -243,7 +239,7 @@
         </div>
 
     </footer>
-    -->
+
     <!-- FOOTER ENDING!!! -->
     <!-- ================================ -->
 
