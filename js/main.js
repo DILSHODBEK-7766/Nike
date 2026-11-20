@@ -4,4 +4,4 @@ import { home } from "./pages/home/index.js";
 document.addEventListener("DOMContentLoaded", () => {
     header();
     home();
-})
+});
